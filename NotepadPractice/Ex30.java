@@ -1,6 +1,6 @@
 class Ex30{
 	public static void main(String args[]){
-	long number=0201103311;
+	long number=201103311L;
 	Ex30 app = new Ex30();
 	boolean result= app.getResult(number);
   }

@@ -8,6 +8,9 @@ class Ex26 {
 
 	public boolean getResult(int arr[]){
 	for(int i=0;i<arr.length;i++){
+		if(arr[arr.length-2] == 1|| arr[arr.length-1]==1){
+	return false;
+	}
 		if(arr[i]==1 && arr[i+1]==2 && arr[i+2]==3){
 		return true;
 		}
