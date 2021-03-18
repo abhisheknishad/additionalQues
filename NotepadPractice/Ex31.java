@@ -15,11 +15,13 @@ class Ex31{
 	if(password.length()<9){
 	return false;
 	}
-	if(!password.contains("@") && !password.contains("#")){
+	if(!(password.contains("@")) && !(password.contains("_")) && !(password.contains("#"))){
 	return false;
 	}
-	char ch=password.charAt(0);
-	if(Character.isDigit(ch)){
+	if(Character.isDigit(password.charAt(0)) || password.charAt(0)=='@' ||password.charAt(0)=='#' || password.charAt(0)=='_'){
+	return false;
+	}
+	if(password.endsWith("@") || password.endsWith("_") || password.endsWith("#")){
 	return false;
 	}
 	return true;
